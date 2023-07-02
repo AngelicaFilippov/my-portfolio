@@ -1,0 +1,36 @@
+.Footer h2{
+    color: #f31486;
+    font-size: 30px;
+    
+}
+
+.Footer {
+    width: 80%;
+    max-width: 1680px;
+    position: fixed; 
+    bottom: 0;  
+    background-color: black;
+    min-height: 230px;
+}
+.home {
+    padding-top: 2%;
+}
+.link {
+    padding-bottom: 30px;
+}
+
+.Footer .home .active {
+    display: none;
+}
+.Footer h2:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 914px){
+    .Footer {
+        width: calc(100% - 60px);
+        margin: auto;
+        padding: 0;
+        position: relative;
+    }
+}

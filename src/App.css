@@ -1,6 +1,37 @@
+
 .App {
   text-align: center;
+
+  
 }
+
+.App .wrapper {
+  width: 80%;
+  margin: auto;
+  max-width: 1680px;
+}
+
+@media only screen and (max-width: 914px){
+  .App .wrapper {
+    width: 100%;
+    margin:0;
+    padding: 0 30px;
+  }
+  .App {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 480px){
+  .App .wrapper{
+    padding: 0 70px;
+  }
+}
+@media only screen and (min-width: 915px){
+  .App .wrapper{
+    padding: 0;
+  }
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +66,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: 'Merriweather Sans';
+  src: local('Merriweather'), url('./fonts/MerriweatherSans-Italic.woff2') format('woff2');
+  src: local('Merriweather'), url('./fonts/MerriweatherSans-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Merriweather Sans';
+  src: local('Merriweather'), url('./fonts/MerriweatherSans-Regular.woff2') format('woff2');
+  src: local('Merriweather'),url('./fonts/MerriweatherSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }

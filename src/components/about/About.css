@@ -1,0 +1,122 @@
+.aboutwrapper{
+    margin-top: 100px;
+    margin-bottom: 200px;
+    background-color: black;
+    padding: 30px;
+    
+}
+
+.introduction{
+    background-color: black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.box{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-content: flex-end;
+    align-items: center;
+    padding: 0px 15px;
+    position: relative;
+}
+
+.bigbox{
+    width: 300px;
+    height: 300px;
+}
+
+.midbox, img{
+    width: 250px;
+    height: 250px;
+}
+
+.smallbox{
+    width: 220px;
+    height: 220px;
+}
+.img{
+    border-radius: 50%; 
+    position: fixed;
+}
+.box p {
+    padding: 5px;
+    text-align: center;
+}
+
+.box:nth-child(even) {
+    background-color: rgb(136, 20, 79);
+    color:white;
+}
+
+.box:nth-child(1){
+    margin-bottom: 4%;
+}
+.box:nth-child(2){
+    left: 20%;
+    margin-top: 13%;
+    margin-left: 1%;
+    
+}
+.box:nth-child(3){
+    left: 30%;
+}
+.box:nth-child(4){
+    left: 40%;
+}
+.box:nth-child(5){
+    left: 50%;
+    margin-bottom: 1%;;
+}
+.box:nth-child(6){
+    left: 40%;
+}
+.box:nth-child(7){
+    left: 25%;
+}
+.box:nth-child(8){
+    left: 45%;
+}
+.box:nth-child(9){
+    left: 30%;
+    margin-bottom: 5%;
+}
+.box:nth-child(10){
+    left: 30%;
+}
+
+@media only screen and (max-width: 1234px){
+    .aboutwrapper {
+        width: 100%;
+        padding-top: 30px;
+        margin-bottom:0; 
+        position: relative;   
+    }
+    .introduction{
+        margin-top: 30px;
+        padding: 0;
+        align-items: center;
+    }
+    .img{
+        width: 250px;
+        height: 250px;
+        position: relative;
+    }
+    .box:nth-child(n){
+        left:0;
+        margin:15px;
+        
+    }
+    
+}
+
+@media only screen and (min-width: 1235px){
+    .box {
+        transform: translateX(75px);
+    }
+}
