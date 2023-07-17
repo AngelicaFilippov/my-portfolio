@@ -1,9 +1,15 @@
 import React from "react";
-import './About.css';
-import imgAngelica from '../images/angelica.png'; 
+import { useRef } from 'react';
+import './About.scss';
+import imgAngelica from '../Images/angelica.png'; 
 
 
 const About = () => {
+    const ref = useRef(null);
+
+    const handleClick = () => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+    };
     return (
         <div className="aboutwrapper">
             <div className="introduction">
@@ -16,11 +22,11 @@ const About = () => {
                         <p>Before<br/> diving into the <br/>world of coding, I had the privilege of pursuing <br/>a career as an<br/> opera singer.
                         </p>
                     </div>
-                    <div className="box midbox">
+                    <div ref={ref} className="box midbox">
                         <p>While<br/> my path may have<br/> taken a different turn, the passion for creativity and expression still burns within me.
                         </p>
                     </div> 
-                    <div className="box midbox">
+                    <div className="box midbox stop">
                         <p>As a <br/>web developer,<br/> I strive to infuse my projects with the same dedication and passion that drove me <br/> on stage.</p>
                     </div> 
                     <div className="box bigbox">
@@ -38,7 +44,11 @@ const About = () => {
                     <div className="box bigbox">
                         <p>I approach every <br/>project with a humble<br/> mindset, embracing challenges <br/> as opportunities for growth<br/> and continuously expanding<br/> my skill set to provide<br/> top-notch solutions.</p>
                     </div>
-            
+                    <a onClick={handleClick} class="arrow-container">
+                        <div class="arrow"></div>
+                        <div class="arrow"></div>
+                        <div class="arrow"></div>
+                    </a>
             </div>
     </div>
        

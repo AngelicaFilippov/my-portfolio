@@ -1,37 +1,55 @@
+:root {
+  --main-color: #f31486;
+  --main-bg-color: black;
+}
 
 .App {
   text-align: center;
 
+  .wrapper 
+    {
+    width: 80%;
+    max-width: 1680px;
+    margin: auto;
+  }
   
-}
-
-.App .wrapper {
-  width: 80%;
-  margin: auto;
-  max-width: 1680px;
+  .wrapper.about .header, 
+  .wrapper.about .footer,
+  .wrapper.impressum .header, 
+  .wrapper.impressum .footer {
+    background-color: rgb(1 1 1 / 86%);
+  }
 }
 
 @media only screen and (max-width: 914px){
-  .App .wrapper {
-    width: 100%;
-    margin:0;
-    padding: 0 30px;
-  }
   .App {
     text-align: center;
+
+    .wrapper {
+      width: 100%;
+      margin:0;
+      padding: 0 30px;
+  
+      .header, .footer {
+        width: calc(100% - 60px);
+        padding:0;
+      }
+    }
   }
 }
+
 @media only screen and (min-width: 480px){
   .App .wrapper{
-    padding: 0 70px;
+    padding: 0 40px;
   }
+
 }
+
 @media only screen and (min-width: 915px){
   .App .wrapper{
     padding: 0;
   }
 }
-
 
 .App-logo {
   height: 40vmin;
