@@ -8,7 +8,7 @@ function Header() {
     return (
         <div className="header">
             <div className="logo">
-                <Link to={'/'} activeStyle={{ color: "blue" }}>
+                <Link to={'/'}>
                     <h1>Angelica<span> Filippov</span></h1>
                 </Link>
             </div>

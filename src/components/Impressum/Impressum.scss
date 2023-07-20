@@ -1,19 +1,23 @@
 .impressum {
     .impwrapper{
         background-color: var(--main-bg-color);
-        margin-top: 130px;
-        margin-bottom: 200px;
+        margin-top: 150px;
         border-radius: 3px;
+        padding: 30px 80px;
+        height: calc(100vh - 380px);
 
-        p {
-            color: white;
+        p, h2, h3 {
+            color: var(--text-grey-color);
             background-color: var(--main-bg-color);
             margin: 1%;
-            padding: 5% 15%;
             border-radius: 3px;
             text-align: left;
             font-size: 20px;
         } 
+
+        h2, h3 {
+            font-weight: bold;
+        }
     }
 }
 

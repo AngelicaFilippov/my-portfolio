@@ -1,6 +1,25 @@
 :root {
   --main-color: #f31486;
   --main-bg-color: black;
+  --text-grey-color: #818181;
+}
+
+@font-face {
+  font-family: 'Merriweather Sans';
+  src: local('Merriweather'), url('./fonts/MerriweatherSans-Italic.woff2') format('woff2');
+  src: local('Merriweather'), url('./fonts/MerriweatherSans-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Merriweather Sans';
+  src: local('Merriweather'), url('./fonts/MerriweatherSans-Regular.woff2') format('woff2');
+  src: local('Merriweather'),url('./fonts/MerriweatherSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 .App {
@@ -14,9 +33,7 @@
   }
   
   .wrapper.about .header, 
-  .wrapper.about .footer,
-  .wrapper.impressum .header, 
-  .wrapper.impressum .footer {
+  .wrapper.about .footer {
     background-color: rgb(1 1 1 / 86%);
   }
 }
@@ -84,22 +101,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-@font-face {
-  font-family: 'Merriweather Sans';
-  src: local('Merriweather'), url('./fonts/MerriweatherSans-Italic.woff2') format('woff2');
-  src: local('Merriweather'), url('./fonts/MerriweatherSans-Italic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Merriweather Sans';
-  src: local('Merriweather'), url('./fonts/MerriweatherSans-Regular.woff2') format('woff2');
-  src: local('Merriweather'),url('./fonts/MerriweatherSans-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
 }

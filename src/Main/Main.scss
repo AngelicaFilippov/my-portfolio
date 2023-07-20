@@ -1,7 +1,7 @@
  .main {
-    margin-top: 100px;
+    margin-top: 150px;
     padding-top: 40px;;
-    min-height: 530px;
+    height: calc(100vh - 380px);
     display: flex;
     background-color: var(--main-bg-color);
     flex-direction: column;
@@ -46,7 +46,7 @@
         }
 
         p {
-            color:#818181;
+            color: var(--text-grey-color);
         }
     }
 }
