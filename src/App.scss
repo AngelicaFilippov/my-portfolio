@@ -36,7 +36,20 @@
   .wrapper.about .footer {
     background-color: rgb(1 1 1 / 86%);
   }
-}
+
+  &::after {
+      position: fixed;
+      content: "";
+      background-color: black;
+      width: 80%;
+      height: 100%;
+      top: 0;
+      left: 10%;
+      z-index: -1;
+      max-width: 1680px;
+    }
+  }
+
 
 @media only screen and (max-width: 914px){
   .App {
