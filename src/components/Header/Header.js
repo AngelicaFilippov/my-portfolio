@@ -20,7 +20,7 @@ function Header() {
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/angelica-boettcher/"> <FontAwesomeIcon icon={faLinkedin} />
+                        <a href="https://www.linkedin.com/in/angelica-filippov/"> <FontAwesomeIcon icon={faLinkedin} />
                         </a>
                     </li>
                     <li>
